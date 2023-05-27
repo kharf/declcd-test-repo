@@ -1,3 +1,3 @@
-entry: "node-exporter": {
+entry: "nodeexporter": {
 	intervalSeconds: 60
 }
