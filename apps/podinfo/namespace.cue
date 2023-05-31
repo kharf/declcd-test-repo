@@ -2,7 +2,7 @@ package podinfo
 
 import "k8s.io/api/core/v1"
 
-namespace: podinfo: v1.#Namespace & {
+podinfo: namespace: v1.#Namespace & {
 	apiVersion: "v1"
 	kind:       "Namespace"
 	metadata: name: "podinfo"
