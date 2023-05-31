@@ -1,3 +1,3 @@
-entry: prometheus: {
+entry: podinfo: {
 	intervalSeconds: 60
 }
