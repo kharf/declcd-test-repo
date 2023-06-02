@@ -2,12 +2,12 @@ package podinfo
 
 import "k8s.io/api/apps/v1"
 
-podinfo: deployment: v1.#Deployment & {
+deployment: v1.#Deployment & {
 	apiVersion: "apps/v1"
 	kind:       "Deployment"
 	metadata: {
 		name:      "podinfo"
-		namespace: podinfo.namespace.metadata.name
+		namespace: "podinfo"
 	}
 	spec: {
 		replicas: 1
