@@ -1,3 +1,5 @@
+package podinfo
+
 component: {
 	intervalSeconds: 60
 	manifests: [
