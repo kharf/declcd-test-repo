@@ -11,7 +11,9 @@ _deployment: v1.#Deployment & {
 	}
 	spec: {
 		replicas: 1
+		selector: matchLabels: app: _deployment.metadata.name
 		template: {
+			metadata: labels: app: _deployment.metadata.name
 			spec: {
 				containers: [{
 					name:  "podinfo"
